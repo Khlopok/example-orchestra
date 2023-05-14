@@ -1,0 +1,12 @@
+:root {
+    /* Fonts */
+    --default-font: roboto, sans-serif;
+    --default-weight: 300; 
+    --title-font: satisfy;
+    /* Palette */
+    --font-color: #110b08;
+    --dark-brown: #1A120B;
+    --brown: #3C2A21;
+    --beige: #d3d0b9;
+    --white: #e7e7d9;
+}

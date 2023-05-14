@@ -1,0 +1,155 @@
+body {
+    background-color: var(--white);
+    color: var(--font-color);
+    font-family: var(--default-font);
+    font-weight: var(--default-weight);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--default-weight);
+}
+/* Posiblemente fusionar las proximas 2 instrucciones */
+[type="text"],
+[type="password"] {
+    outline: none;
+}
+[type="submit"] {
+    outline: none;
+}
+.main-header {
+    --background-brightness: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--background-brightness)), rgba(0, 0, 0, var(--background-brightness))), url(../img/orquesta.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.main-title {
+    width: 50%;
+    padding: 0 2em 0 4em;
+}
+.main-header h1 {
+    font-family: var(--title-font);
+    font-size: 3em;
+    font-weight: 400;
+}
+.login-form-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form {
+    color: var(--font-color);
+    width: 50%;
+    padding: 1em 2em;
+    background-color: var(--white);
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-form h2 {
+    font-weight: 500;
+    font-size: 2em;
+}
+.login-form [type="text"],
+.login-form [type="password"] {
+    background-color: var(--white);
+    width: 100%;
+    padding: .75em;
+    margin-bottom: 3em;
+    border: none;
+    border-bottom: 2px solid rgb(117, 117, 117);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+.login-form [type="text"]:focus,
+.login-form [type="password"]:focus {
+    background-color: var(--beige);
+    border-bottom: 2px solid var(--brown);
+}
+.login-form [type="submit"] {
+    background-color: var(--brown);
+    color: #fff;
+    padding: .5em 1em;
+    border: none;
+    border-radius: .25em;
+    cursor: pointer;
+}
+.login-form [type="submit"]:hover {
+    background-color: var(--dark-brown);
+}
+.main-container {
+    background-color: #ffffffb2;
+    width: 80vw;
+    margin: 5em auto;
+    border-radius: .5em;
+}
+.main-container section {
+    height: 50vh;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.main-container section:nth-child(even) {
+    color: #fff;
+}
+.main-section-music,
+.main-section-inspiration {
+    --background-brightness: 0.5;
+    background-size: cover;
+    background-position: center 30%;
+}
+.main-section-music {
+    background-image: linear-gradient(rgba(0, 0, 0, var(--background-brightness)), rgba(0, 0, 0, var(--background-brightness))), url(../img/sujeto1.jpg);
+}
+.main-section-inspiration {
+    background-image: linear-gradient(rgba(0, 0, 0, var(--background-brightness)), rgba(0, 0, 0, var(--background-brightness))), url(../img/sujeto2.jpg);
+}
+.main-container section:nth-child(odd) h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+}
+.main-container section:nth-child(even) h2 {
+    font-family: var(--title-font);
+    font-size: 2.5em;
+    font-weight: 400;
+    text-align: center;
+}
+.main-container p {
+    font-size: 1.25em;
+    text-indent: 1em;
+}
+.main-footer {
+    background-color: var(--white);
+    background-image: url(../img/hexagons.svg);
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-footer div {
+    background-color: #ffffffb2;
+    width: 25vw;
+    height: 25vw;
+    padding: 1.5em;
+    border: 2px dashed #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-footer img {
+    width: 100%;
+}
